@@ -1,12 +1,12 @@
 // Your web app's Firebase configuration
 var firebaseConfig = {
-    apiKey: "AIzaSyDcjze1VR7BSap669QM4v30dLh7Af07Be0",
-    authDomain: "gs23-12a42.firebaseapp.com",
-    databaseURL: "https://gs23-12a42-default-rtdb.firebaseio.com",
-    projectId: "gs23-12a42",
-    storageBucket: "gs23-12a42.appspot.com",
-    messagingSenderId: "490322307408",
-    appId: "1:490322307408:web:d91d6e1a55782f18fc6455"
+    apiKey: "**************",
+    authDomain: "**************",
+    databaseURL: "**************",
+    projectId: "**************",
+    storageBucket: "**************",
+    messagingSenderId: "**************",
+    appId: "**************",
 };
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
@@ -47,87 +47,6 @@ document.getElementById('file').addEventListener('change',(event) => { //addEven
         if(progress === 100)document.getElementById('status').append("アップロード完了");    
     });
     };
-
-
-
-
-    //指定したファイルのurlのダウンロード
-    // function DOWNLOAD(){
-    //     const storageRef = firebase.storage().ref('images/参加者名簿.pdf'); 
-    //     storageRef.getDownloadURL().then(function(url){ 
-    //         console.log(url);
-    //     });
-    // };
-
-
-    // 指定したファイルのメタデータのダウンロード
-    // function DOWNLOAD(){
-    //     const storageRef = firebase.storage().ref('images/参加者名簿.pdf'); 
-    //     storageRef.getMetadata().then(function(metadata){
-    //     console.log(metadata);
-    //     });
-    // };
-
-    // 指定したディレクトリに存在するファイルのリストのダウンロード
-    // function DOWNLOAD(){
-    //     const listRef = firebase.storage().ref('images/');
-    //     listRef.listAll().then(function(res){
-    //         console.log(res,"res")
-    //         items=res.items  //これでリストの配列が返ってくる
-    //         console.log(items,"items")
-    //         hoge0=res.items[3].name
-    //         console.log(hoge0,"name1")
-    //         hoge3=res.items[3].getMetadata() //firebase.storage().ref('images/').listAll().then(function(res){res.items[i]getMetadata()}) これの戻り値が「Promise」
-    //         console.log(hoge3,"metadata")
-    //     });
-    // };
-
-    // メタデータを取得する
-    // function DOWNLOAD(){
-    //     firebase.storage().ref('images/html.png').getMetadata().then(function(meta_task){
-    //         console.log(meta_task,"meta_task")
-    //         let meta = meta_task
-    //         console.log(meta)
-    //         console.log(meta.customMetadata.date,"カスタムで決めたメタデータdate")
-    //     });
-    // };
-
-
-    //特定のファイルのメタデータを取得する
-    // function DOWNLOAD(){
-    //     firebase.storage().ref('images/').listAll().then(function(res){
-    //         res.items[3].getMetadata().then(function(meta_task){
-    //             console.log(meta_task.customMetadata.date,"カスタムで決めたメタデータdate");
-    //         });
-    //     });
-    // };
-
-
-    // function DOWNLOAD(){
-    //     const res = firebase.storage().ref('images/').listAll();  //これでPromiseが返ってくる
-    //     console.log(res)
-    //     }
-
-    // async function DOWNLOAD(){
-    //     const res = await firebase.storage().ref('images/').listAll();  //これでrtオブジェクトが返ってくる
-    //     console.log(res)
-    //     }
-
-
-    // async function DOWNLOAD(){
-    //     const res = await firebase.storage().ref('images/').listAll();  //これでrtオブジェクトが返ってくる
-    //     console.log(res)
-    //     const users = await res.items;  //listの配列が返ってくる
-    //     console.log(users)
-    //     const res2 = await firebase.storage().ref('images/').listAll().items;  //これでは返ってこない
-    //     console.log(res2)
-    //     const hoge = await res.items[2].getMetadata() // オブジェクト？が返ってくる
-    //     console.log(hoge)
-    //     const hoge2 = hoge.customMetadata // カスタムメタデータのオブジェクトが返ってきた
-    //     console.log(hoge2)
-    //     const hoge3 = hoge.customMetadata.date  //そこからdateを取り出す
-    //     console.log(hoge3)
-    //     }
 
 
     document.getElementById("shiainohi").onclick = function() {
@@ -174,14 +93,8 @@ document.getElementById('file').addEventListener('change',(event) => { //addEven
             if(i===itemslength-1){
                 document.getElementById("end").append("ファイルはこれで全てです");
                 }
-
-
-
         };                        
     };
-
-
-
 
 
         // テキストをハイパーリンク化するための関数（こちら参照：https://hakuhin.jp/js/anchor.html#ANCHOR_ATTACH_ELEMENT）
