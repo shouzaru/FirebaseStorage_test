@@ -1,0 +1,17 @@
+@charset "utf-8";
+
+body{
+    text-align: center;
+}
+
+.status{
+    color: red;
+}
+
+a,#end{
+    display: block;
+}
+
+.UL{
+    margin-bottom: 50px;
+}
